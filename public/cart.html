@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>سلة التسوق - Desert clothes</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/styles/cart.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="index.html">Desert clothes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto nav-links">
+          <li class="nav-item"><a class="nav-link" href="HelloPage.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="signup.html">Signup</a></li>
+          <li class="nav-item"><a class="nav-link logout" href="#" id="logout-btn">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header id="home">
+    <section class="hero">
+      <div class="content">
+    </div>
+</section>
+</header>
+
+  <!-- Cart Section -->
+
+  <section class="cart-container">
+    <h2 class="text-center mb-4">سلتك</h2>
+
+```
+<div class="cart-items">
+  <!-- سيتم ملؤها بواسطة JavaScript -->
+  <div class="empty-cart">السلة فارغة</div>
+</div>
+
+<div class="cart-total">
+  الإجمالي: $<span>0</span>
+</div>
+
+<div class="payment-methods">
+  <h3 class="mb-3">اختر طريقة الدفع:</h3>
+  <div class="payment-box">فيزا</div>
+  <div class="payment-box">ماستركارد</div>
+  <div class="payment-box">باي بال</div>
+</div>
+
+<button class="btn-order mt-4">إتمام الشراء</button>
+```
+
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="./js/cart.js"></script>
+
+  <script>
+    // دالة تسجيل الخروج
+    document.getElementById("logout-btn").addEventListener("click", function(e) {
+      e.preventDefault();
+      alert("تم تسجيل الخروج بنجاح");
+      window.location.href = "login.html";
+    });
+  </script>
+
+</body>
+</html>
