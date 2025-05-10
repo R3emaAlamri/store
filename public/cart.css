@@ -1,0 +1,135 @@
+:root {
+  --background-light: #ffffff;
+  --background-dark: #1e1e1e;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+  --button-light: #f4f4f4;
+  --button-dark: #333333;
+  --border-light: #ccc;
+  --border-dark: #444;
+}
+
+[data-theme="light"] {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
+[data-theme="dark"] {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-light);
+  color: var(--text-light);
+  transition: background-color 0.3s;
+}
+
+[data-theme="dark"] button {
+  background-color: var(--button-dark);
+  color: var(--text-dark);
+}
+
+button.theme-toggle-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  padding: 10px 20px;
+  background-color: var(--button-light);
+  border: 1px solid var(--border-light);
+  color: var(--text-light);
+  border-radius: 5px;
+}
+
+[data-theme="dark"] button.theme-toggle-btn {
+  background-color: var(--button-dark);
+  border: 1px solid var(--border-dark);
+  color: var(--text-dark);
+}
+
+.cart-container {
+  padding: 20px;
+}
+
+.cart-items {
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid var(--border-light);
+  border-radius: 5px;
+  background-color: var(--background-light);
+}
+
+[data-theme="dark"] .cart-item {
+  background-color: var(--background-dark);
+  border-color: var(--border-dark);
+}
+
+.remove-item {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.cart-total {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.payment-methods {
+  margin-top: 30px;
+}
+
+.payment-box {
+  background-color: var(--button-light);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+[data-theme="dark"] .payment-box {
+  background-color: var(--button-dark);
+}
+
+.payment-box.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-order {
+  background-color: #e5c185;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+[data-theme="dark"] .btn-order {
+  background-color: #e5c185;
+}

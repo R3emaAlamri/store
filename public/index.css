@@ -1,0 +1,91 @@
+/* ================================
+   🟢 المتغيرات العامة للثيم
+   ================================ */
+:root {
+  --body-background: #ffffff;
+  --text-color: #000000;
+
+  --button-bg: #f4f4f4;
+  --button-text: #000000;
+
+  --border-color: #ccc;
+
+  --transition-speed: 0.3s;
+}
+
+[data-theme='dark'] {
+  --body-background: #1e1e1e;
+  --text-color: #ffffff;
+
+  --button-bg: #333333;
+  --button-text: #ffffff;
+
+  --border-color: #444;
+}
+
+/* ================================
+   🔁 Reset & Base Styles
+   ================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all var(--transition-speed) ease-in-out;
+}
+
+body {
+  background-color: var(--body-background);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* ================================
+   🧩 عناصر عامة
+   ================================ */
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* ================================
+   🔤 الكود البرمجي
+   ================================ */
+code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* ================================
+   🧭 روابط
+   ================================ */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.language-theme-toggle button {
+  margin: 5px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #e5c185;
+  color: white;
+  cursor: pointer;
+}
+
+.language-theme-toggle button:hover {
+  background-color: #c59b61;
+}
+
